@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background-color: rgba(6, 3, 26, 0.8);
+    font-family: sans-serif;
+}
+
+header {
+    margin: 10px;
+}
+
+header h1 {
+    font-size: 28px;
+    text-align: center; 
+    margin: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.winner {
+    display: flex;
+    justify-content: center;
+    margin: 2% auto;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #ccc;
+    font-size: 18px;
+}
+
+.align {
+    display: flex;
+    justify-content: space-around;
+}
+
+.align img {
+    max-width: 160px;
+    margin: 10px;
+    opacity: 0.3;
+}
+
+.player-options,
+.adversary-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-options p,
+.adversary-options p {
+    text-align: center;
+    color: #ccc;
+}
+
+.adversary-options img {
+    transform: scaleX(-1);
+}
+
+.player-options img {
+    cursor: pointer;
+}
+
+.player-options img:hover {
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 12px; 
+    color: #ccc;
+    margin-top: 3%;
+}
